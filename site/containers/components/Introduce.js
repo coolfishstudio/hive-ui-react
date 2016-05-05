@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { View } from 'hive'
 
-class Introduce extends Component {
+class IntroducePanel extends Component {
     render () {
         return (
             <View>
@@ -12,4 +12,4 @@ class Introduce extends Component {
     }
 }
 
-module.exports = Introduce
+module.exports = IntroducePanel

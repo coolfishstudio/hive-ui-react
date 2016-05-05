@@ -1,7 +1,8 @@
 var HIVEUI = {
-    get View() { return require('./components/view/index') },
-    get Col() { return require('./components/col/index') },
-    get Row() { return require('./components/row/index') },
+    get View() { return require('./components/view') },
+    get Col() { return require('./components/col') },
+    get Row() { return require('./components/row') },
+    get Icon() { return require('./components/icon') },
 };
 
 module.exports = HIVEUI;

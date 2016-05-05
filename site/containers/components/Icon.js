@@ -1,14 +1,15 @@
 import React, { Component } from 'react'
-import { View } from 'hive'
+import { View, Icon } from 'hive'
 
-class Icon extends Component {
+class IconPanel extends Component {
     render () {
         return (
             <View>
                 icon
+                <Icon type={'rollback'} />
             </View>
         )
     }
 }
 
-module.exports = Icon
+module.exports = IconPanel
