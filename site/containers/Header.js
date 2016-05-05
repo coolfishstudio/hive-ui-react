@@ -8,7 +8,7 @@ class Header extends Component {
             <Row justify={'end'} className={'site-header'}>
                 <Col span={2}><Link to='/home'>首页</Link></Col>
                 <Col span={2}><Link to='/practice'>实践</Link></Col>
-                <Col span={2}><Link to='/components/layout'>组件</Link></Col>
+                <Col span={2}><Link to='/components/introduce'>组件</Link></Col>
             </Row>
         )
     }

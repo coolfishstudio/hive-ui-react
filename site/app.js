@@ -9,10 +9,17 @@ import Home from './containers/Home'
 import Practice from './containers/Practice'
 import Components from './containers/Components'
 
-const ComponentElements = {}
-ComponentElements.layout = require('./containers/components/Layout');
-ComponentElements.icon = require('./containers/components/Icon');
-ComponentElements.button = require('./containers/components/Button');
+import ComponentsIntroduce from './containers/components/Introduce'
+import Layout from './containers/components/Layout'
+import Icon from './containers/components/Icon'
+import Button from './containers/components/Button'
+
+const ComponentElements = {
+    introduce: ComponentsIntroduce,
+    layout: Layout,
+    icon: Icon,
+    button: Button
+}
 
 render( 
     <Router history={ browserHistory }>

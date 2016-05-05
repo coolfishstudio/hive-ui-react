@@ -10,6 +10,7 @@ class Components extends Component {
                     <Row>
                         <Col span={5} className={'site-aside-container'}>
                             <ul className={'site-aside-nav'}>
+                                <li><Link to='/components/introduce'>介绍</Link></li>
                                 <li><Link to='/components/layout'>布局</Link></li>
                                 <li><Link to='/components/icon'>图标</Link></li>
                                 <li><Link to='/components/button'>按钮</Link></li>

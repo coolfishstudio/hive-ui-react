@@ -1,12 +1,16 @@
 import React, { Component } from 'react'
-import { View } from 'hive'
+import { View, Row, Col } from 'hive'
 
 class Practice extends Component {
     render () {
         return (
-            <View>
-                Practice
-            </View>
+            <Row justify={'center'}>
+                <Col span={22} className={'site-main-wrapper'}>
+                    <View>
+                        Practice
+                    </View>
+                </Col>
+            </Row>
         )
     }
 }
