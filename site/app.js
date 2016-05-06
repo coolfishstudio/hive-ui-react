@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { render } from 'react-dom'
-import { Router, Route, browserHistory, IndexRedirect, Redirect } from 'react-router'
-
+import { Router, Route, useRouterHistory, IndexRedirect, Redirect } from 'react-router'
+import { createHashHistory } from 'history'
 import './style/index.less'
 
 import Container from './containers/Container'
@@ -14,6 +14,7 @@ import Layout from './containers/components/Layout'
 import Icon from './containers/components/Icon'
 import Button from './containers/components/Button'
 
+//组件库
 const ComponentElements = {
     introduce: ComponentsIntroduce,
     layout: Layout,
@@ -21,8 +22,10 @@ const ComponentElements = {
     button: Button
 }
 
+const appHistory = useRouterHistory(createHashHistory)({ queryKey: false })
+
 render( 
-    <Router history={ browserHistory }>
+    <Router history={ appHistory }>
         <Route path='/' component={ Container }>
             <Route path='home' component={ Home } />
             <Route path='practice' component={ Practice } />

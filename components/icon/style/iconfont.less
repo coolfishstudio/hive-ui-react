@@ -4,15 +4,16 @@
 
 
 @font-face {
-  src: url('@{icon-url}.eot'); /* IE9*/
-  src: url('@{icon-url}.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('@{icon-url}.woff') format('woff'), /* chrome、firefox */
-  url('@{icon-url}.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-  url('@{icon-url}.svg#iconfont') format('svg'); /* iOS 4.1- */
+    font-family: "anticon";
+    src: url('@{icon-url}.eot'); /* IE9*/
+    src: url('@{icon-url}.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('@{icon-url}.woff') format('woff'), /* chrome、firefox */
+    url('@{icon-url}.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('@{icon-url}.svg#iconfont') format('svg'); /* iOS 4.1- */
 }
 
 .@{iconfont-css-prefix} {
- .iconfont-mixin();
+    .iconfont-mixin();
 }
 
 .@{iconfont-css-prefix}-caret-circle-o-up:before        {content:"\e60c";}
@@ -190,7 +191,7 @@
 .@{iconfont-css-prefix}-heart-o:before                  {content:"\e6b0";}
 .@{iconfont-css-prefix}-calculator:before               {content:"\e6b1";}
 .@{iconfont-css-prefix}-loading:before {
-  display: inline-block;
-  animation: loadingCircle 1s infinite linear;
-  content:"\e6a1";
+    display: inline-block;
+    animation: loadingCircle 1s infinite linear;
+    content:"\e6a1";
 }

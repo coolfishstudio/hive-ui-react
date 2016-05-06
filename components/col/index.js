@@ -9,7 +9,7 @@ class Col extends Component {
     render () {
         const { span, offset, order } = this.props
         /*
-         * span : 1-24 栅格
+         * span : 24 栅格
          * offset : 列偏移
          * order: 排序
          */

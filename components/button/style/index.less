@@ -1,0 +1,180 @@
+// Btn css
+.hive-btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    line-height: 1.5;
+    padding: 4px 15px;
+    font-size: 12px;
+    border-radius: 6px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all .3s cubic-bezier(.645, .045, .355, 1);
+    transition: all .3s cubic-bezier(.645, .045, .355, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    color: #666;
+    background-color: #f4f4f4;
+    border-color: #d9d9d9;
+}
+.hive-btn, .hive-btn:active, .hive-btn:focus {
+    outline: 0;
+}
+.hive-btn:hover, .hive-btn:focus {
+    color: #57c5f7;
+    background-color: #fff;
+    border-color: #57c5f7;
+}
+.hive-btn:active, .hive-btn.active {
+    color: #2baee9;
+    background-color: transparent;
+    border-color: #2baee9;
+}
+//btn type
+.hive-btn-ghost, 
+.hive-btn-dashed {
+    color: #666;
+    background-color: transparent;
+    border-color: #d9d9d9;
+}
+.hive-btn-dashed {
+    border-style: dashed;
+}
+.hive-btn-ghost:hover,
+.hive-btn-ghost:focus, 
+.hive-btn-dashed:hover,
+.hive-btn-dashed:focus {
+    color: #57c5f7;
+    background-color: transparent;
+    border-color: #57c5f7;
+}
+.hive-btn-ghost:active, .hive-btn-ghost.active, 
+.hive-btn-dashed:active, .hive-btn-dashed.active {
+    color: #2baee9;
+    background-color: transparent;
+    border-color: #2baee9;
+}
+.hive-btn-primary {
+    color: #fff;
+    background-color: #2db7f5;
+    border-color: #2db7f5;
+}
+.hive-btn-primary:hover, .hive-btn-primary:focus {
+    color: #fff;
+    background-color: #57c5f7;
+    border-color: #57c5f7;
+}
+.hive-btn-primary:active, .hive-btn-primary.active {
+    color: #f2f2f2;
+    background-color: #2baee9;
+    border-color: #2baee9;
+}
+//btn size
+.hive-btn-lg {
+    padding: 4px 15px 5px 15px;
+    font-size: 14px;
+    border-radius: 6px;
+}
+.hive-btn-sm {
+    padding: 1px 7px;
+    font-size: 12px;
+    border-radius: 4px;
+}
+//btn shape
+.hive-btn-circle {
+    border-radius: 50%;
+    padding: 0;
+    font-size: 14px;
+    width: 28px;
+    height: 28px;
+}
+.hive-btn-circle.hive-btn-lg {
+    font-size: 16px;
+    width: 32px;
+    height: 32px;
+}
+.hive-btn-circle.hive-btn-sm {
+    font-size: 12px;
+    width: 22px;
+    height: 22px;
+}
+//btn disabled
+.hive-btn.disabled, 
+.hive-btn[disabled] {
+    cursor: not-allowed;
+}
+
+.hive-btn.disabled, 
+.hive-btn[disabled], 
+fieldset[disabled] .hive-btn, 
+.hive-btn.disabled:hover, 
+.hive-btn[disabled]:hover, 
+fieldset[disabled] .hive-btn:hover, 
+.hive-btn.disabled:focus, 
+.hive-btn[disabled]:focus, 
+fieldset[disabled] .hive-btn:focus, 
+.hive-btn.disabled:active, 
+.hive-btn[disabled]:active, 
+fieldset[disabled] .hive-btn:active, 
+.hive-btn.disabled.active, 
+.hive-btn[disabled].active, 
+fieldset[disabled] .hive-btn.active,
+.hive-btn-primary.disabled, 
+.hive-btn-primary[disabled], 
+fieldset[disabled] .hive-btn-primary, 
+.hive-btn-primary.disabled:hover, 
+.hive-btn-primary[disabled]:hover, 
+fieldset[disabled] .hive-btn-primary:hover, 
+.hive-btn-primary.disabled:focus, 
+.hive-btn-primary[disabled]:focus, 
+fieldset[disabled] .hive-btn-primary:focus, 
+.hive-btn-primary.disabled:active, 
+.hive-btn-primary[disabled]:active, 
+fieldset[disabled] .hive-btn-primary:active, 
+.hive-btn-primary.disabled.active, 
+.hive-btn-primary[disabled].active, 
+fieldset[disabled] .hive-btn-primary.active,
+.hive-btn-ghost.disabled, 
+.hive-btn-ghost[disabled], 
+fieldset[disabled] .hive-btn-ghost, 
+.hive-btn-ghost.disabled:hover, 
+.hive-btn-ghost[disabled]:hover, 
+fieldset[disabled] .hive-btn-ghost:hover, 
+.hive-btn-ghost.disabled:focus, 
+.hive-btn-ghost[disabled]:focus, 
+fieldset[disabled] .hive-btn-ghost:focus, 
+.hive-btn-ghost.disabled:active, 
+.hive-btn-ghost[disabled]:active, 
+fieldset[disabled] .hive-btn-ghost:active, 
+.hive-btn-ghost.disabled.active, 
+.hive-btn-ghost[disabled].active, 
+fieldset[disabled] .hive-btn-ghost.active,
+.hive-btn-dashed.disabled, 
+.hive-btn-dashed[disabled], 
+fieldset[disabled] .hive-btn-dashed, 
+.hive-btn-dashed.disabled:hover, 
+.hive-btn-dashed[disabled]:hover, 
+fieldset[disabled] .hive-btn-dashed:hover, 
+.hive-btn-dashed.disabled:focus, 
+.hive-btn-dashed[disabled]:focus, 
+fieldset[disabled] .hive-btn-dashed:focus, 
+.hive-btn-dashed.disabled:active, 
+.hive-btn-dashed[disabled]:active, 
+fieldset[disabled] .hive-btn-dashed:active, 
+.hive-btn-dashed.disabled.active, 
+.hive-btn-dashed[disabled].active, 
+fieldset[disabled] .hive-btn-dashed.active {
+    color: #ccc;
+    background-color: #f4f4f4;
+    border-color: #d9d9d9;
+}
