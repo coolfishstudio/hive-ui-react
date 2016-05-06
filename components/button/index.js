@@ -24,11 +24,11 @@ class Button extends Component {
             type={ htmlType }
             className={
                 classNames(
-                    (this.props.className && this.props.className),
                     'hive-btn', 
                     (type && type !== 'default' && 'hive-btn-' + type),
                     (shape && shape !== 'default' && 'hive-btn-' + shape),
-                    (size && size !== 'default' && 'hive-btn-' + sizeCls[size])
+                    (size && size !== 'default' && 'hive-btn-' + sizeCls[size]),
+                    (this.props.className && this.props.className)
                 )}
             style={ this.props.style }>
             <span>{this.props.children}</span>

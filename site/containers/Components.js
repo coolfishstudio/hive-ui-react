@@ -11,9 +11,9 @@ class Components extends Component {
                         <Col span={5} className={'site-aside-container'}>
                             <ul className={'site-aside-nav'}>
                                 <li><Link to='/components/introduce'>介绍</Link></li>
-                                <li><Link to='/components/layout'>布局</Link></li>
-                                <li><Link to='/components/icon'>图标</Link></li>
-                                <li><Link to='/components/button'>按钮</Link></li>
+                                <li><Link to='/components/layout'>布局<span>Layout</span></Link></li>
+                                <li><Link to='/components/icon'>图标<span>Icon</span></Link></li>
+                                <li><Link to='/components/button'>按钮<span>Button</span></Link></li>
                             </ul>
                         </Col>
                         <Col span={19} className={'site-main-container'}>
