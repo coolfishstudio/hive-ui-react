@@ -1,6 +1,5 @@
 import React, {Component} from 'react'
-import ReactDOM from 'react-dom'
-import View from '../view/index'
+import View from '../view'
 import classNames from 'classNames'
 
 import './style/index.less'

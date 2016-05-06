@@ -26,6 +26,7 @@
     color: #666;
     background-color: #f4f4f4;
     border-color: #d9d9d9;
+    position: relative;
 }
 .hive-btn, .hive-btn:active, .hive-btn:focus {
     outline: 0;
@@ -177,4 +178,15 @@ fieldset[disabled] .hive-btn-dashed.active {
     color: #ccc;
     background-color: #f4f4f4;
     border-color: #d9d9d9;
+}
+
+.hive-btn-loading {
+    pointer-events: none;
+    opacity: .75;
+}
+//选择icon后面的span
+.hive-btn > .hive-icon+span, 
+//选择span后面的icon
+.hive-btn > span+.hive-icon {
+    margin-left: .5em;
 }

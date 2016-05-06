@@ -1,0 +1,50 @@
+// ButtonGroup css
+.hive-btn-group {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+//第一个并且不是最后一个
+.hive-btn-group > .hive-btn:first-child:not(:last-child) {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    padding-right: 8px;
+    margin-left: 0;
+}
+//最后一个并且不是第一个
+.hive-btn-group > .hive-btn:last-child:not(:first-child) {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    padding-left: 8px;
+    margin-left: -1px;
+}
+//既不是第一个也不是最后一个
+.hive-btn-group > .hive-btn:not(:first-child):not(:last-child) {
+    border-radius: 0;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-left: -1px;
+}
+
+.hive-btn-group > .hive-btn:hover,
+.hive-btn-group > .hive-btn:focus,
+.hive-btn-group > .hive-btn:active,
+.hive-btn-group > .hive-btn.active{
+    z-index: 2
+}
+
+.hive-btn-group .hive-btn-primary:not(:first-child) {
+    border-left-color: #2baee9;
+}
+
+//size
+.hive-btn-group-sm > .hive-btn {
+    padding: 1px 7px;
+    font-size: 12px;
+    border-radius: 4px;
+}
+.hive-btn-group-lg > .hive-btn {
+    padding: 4px 15px 5px 15px;
+    font-size: 14px;
+    border-radius: 6px;
+}
