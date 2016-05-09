@@ -13,13 +13,17 @@ import ComponentsIntroduce from './containers/components/Introduce'
 import Layout from './containers/components/Layout'
 import Icon from './containers/components/Icon'
 import Button from './containers/components/Button'
+import Image from './containers/components/Image'
+import Line from './containers/components/Line'
 
 //组件库
 const ComponentElements = {
     introduce: ComponentsIntroduce,
     layout: Layout,
     icon: Icon,
-    button: Button
+    button: Button,
+    image: Image,
+    line: Line
 }
 
 const appHistory = useRouterHistory(createHashHistory)({ queryKey: false })
