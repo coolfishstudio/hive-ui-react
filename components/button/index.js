@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import classNames from 'classNames'
 import Icon from '../icon'
 import './style/index.less'
+import util from '../util/util'
 
 import ButtonGroup from './buttonGroup'
 
@@ -13,6 +14,7 @@ class Button extends Component {
      * size: 大小 large｜default|small
      * disabled: 不可用 true|null
      * loading: 加载中 true|null
+     * ripple: 波纹效果 true|null
      * onPress: 点击事件
      */
     static propTypes = {
@@ -24,7 +26,38 @@ class Button extends Component {
         icon: React.PropTypes.string,
         onPress: React.PropTypes.func,
     }
+    constructor (props) {
+        super(props)
+        this.state = {
+            isRipple: false
+        }
+    }
+    handleClick (ev, onPress) {
+        this.props.ripple && this.ripple(ev)
+        onPress && onPress()
+    }
+    ripple (ev) {
+        var oBtn = ReactDOM.findDOMNode(this.refs.button);
+        var oBtnOffset = util.getOffset(oBtn);
+        var oEventPointer = util.getPointer(ev || event);
+        
+        var oDiv = document.createElement('div');
+        oDiv.className = 'hive-btn-ripple';
+        oDiv.style.left = (oEventPointer.x - oBtnOffset.left - 20) + 'px';
+        oDiv.style.top = (oEventPointer.y - oBtnOffset.top + 20) + 'px';
+        oBtn.appendChild(oDiv);
 
+        setTimeout(()=> {
+            oDiv.className = 'hive-btn-ripple hive-btn-ripple-wave';
+            setTimeout(() => {
+                oDiv.style.opacity = 0;
+                setTimeout(() => {
+                    oBtn.removeChild(oDiv);
+                }, 750)
+            }, 750) 
+        }, 100)
+
+    }
     render () {
         const sizeCls = { 'large': 'lg', 'small': 'sm'}
         const { type='default', shape='default', size='default', htmlType='button', loading, icon, onPress=null } = this.props
@@ -55,7 +88,7 @@ class Button extends Component {
                     (loading && 'hive-btn-loading'),
                     (this.props.className && this.props.className)
                 )}
-            onClick={ onPress }
+            onClick={ (ev)=> this.handleClick(ev, onPress) }
             style={ this.props.style }>
             { iconType ? <Icon type={iconType} /> : null }{ childrenObj }
         </button>

@@ -27,6 +27,7 @@
     background-color: #f4f4f4;
     border-color: #d9d9d9;
     position: relative;
+    overflow: hidden;
 }
 .hive-btn, .hive-btn:active, .hive-btn:focus {
     outline: 0;
@@ -189,4 +190,32 @@ fieldset[disabled] .hive-btn-dashed.active {
 //选择span后面的icon
 .hive-btn > span+.hive-icon {
     margin-left: .5em;
+}
+
+.hive-btn-ripple {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: all 0.7s ease-out;
+    transition-property: opacity, -webkit-transform;
+    transition-property: transform, opacity;
+    transition-property: transform, opacity, -webkit-transform;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    pointer-events: none;
+    opacity: 0;
+}
+.hive-btn-ripple-wave {
+    -webkit-transition-duration: 750ms;
+    -moz-transition-duration: 750ms;
+    -o-transition-duration: 750ms;
+    transition-duration: 750ms;
+    -webkit-transform: scale(4.7);
+    -moz-transform: scale(4.7);
+    -ms-transform: scale(4.7);
+    -o-transform: scale(4.7);
+    transform: scale(4.7);
+    opacity: 1;
 }

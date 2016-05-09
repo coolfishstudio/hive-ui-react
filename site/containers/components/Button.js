@@ -115,6 +115,8 @@ class ButtonPanel extends Component {
                         <Button type={'primary'}>小</Button>
                         <Button type={'primary'}>小</Button>
                     </Button.Group>
+                    <p>波纹</p>
+                    <Button type={'primary'} size={'large'} ripple>波纹效果</Button>
                 </div>
             </View>
         )
