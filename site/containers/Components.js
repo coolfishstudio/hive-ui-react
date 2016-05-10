@@ -16,6 +16,7 @@ class Components extends Component {
                                 <li><Link to='/components/button'>按钮<span>Button</span></Link></li>
                                 <li><Link to='/components/image'>图片<span>Image</span></Link></li>
                                 <li><Link to='/components/line'>线条<span>Line</span></Link></li>
+                                <li><Link to='/components/slider'>轮播图<span>Slider</span></Link></li>
                             </ul>
                         </Col>
                         <Col span={19} className={'site-main-container'}>

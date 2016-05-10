@@ -15,6 +15,7 @@ import Icon from './containers/components/Icon'
 import Button from './containers/components/Button'
 import Image from './containers/components/Image'
 import Line from './containers/components/Line'
+import Slider from './containers/components/Slider'
 
 //组件库
 const ComponentElements = {
@@ -23,7 +24,8 @@ const ComponentElements = {
     icon: Icon,
     button: Button,
     image: Image,
-    line: Line
+    line: Line,
+    slider: Slider
 }
 
 const appHistory = useRouterHistory(createHashHistory)({ queryKey: false })

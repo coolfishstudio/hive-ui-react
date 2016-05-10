@@ -5,6 +5,7 @@ import View from './view'
 import Button from './button'
 import Image from './image'
 import Line from './line'
+import Slider from './slider'
 
 export {
   Col,
@@ -13,5 +14,6 @@ export {
   View,
   Button,
   Image,
-  Line
+  Line,
+  Slider
 }
